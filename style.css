@@ -11,8 +11,10 @@
     font-family: 'Barlow', sans-serif;
 }
 
-html {
+html, body {
     --main: #ffc34b;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -105,6 +107,7 @@ button:hover {
 header {
     position: relative;
     padding: 25px 15px;
+    z-index: -1;
 }
 
 header::before {
@@ -173,7 +176,7 @@ main {
     z-index: 1;
 }
 
-main::after {
+main::before {
     position: absolute;
     content: "";
     width: 150%;
@@ -267,7 +270,7 @@ footer>span {
         width: 275px;
     }
 
-    main::after {
+    main::before {
         width: 200%;
         left: -50%;
     }
@@ -307,7 +310,7 @@ footer>span {
         width: 175px;
     }
 
-    main::after {
+    main::before {
         width: 300%;
         left: -100%;
     }
