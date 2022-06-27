@@ -1,0 +1,319 @@
+/* Starter */
+/* 
+*** Cette partie sert à réinitialiser des proprietés CSS génantes et à créer des classes et variables utilitaires
+*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+html {
+    --main: #ffc34b;
+}
+
+body {
+    background-color: rgba(14, 14, 14, 1);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+p, li {
+    text-align: center;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 15px 0px;
+    padding: 0px 15px;
+}
+
+ul li::before {
+    content: "\2022";
+    color: var(--main);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.li-row>ul {
+    width: 50%;
+    padding: 15px;
+}
+
+button {
+    background-color: var(--main);
+    padding: 10px 50px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px grey;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+.black-gold-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.black-gold-title>span:first-child {
+    color: black;
+}
+
+.black-gold-title>span:last-child {
+    color: var(--main);
+}
+
+/* Header */
+
+header {
+    position: relative;
+    padding: 25px 15px;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 125%;
+    width: 100%;
+    background: rgb(78, 78, 78);
+    background: radial-gradient(circle, rgba(78, 78, 78, 1) 0%, rgba(43, 43, 43, 1) 22%, rgba(14, 14, 14, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header>img {
+    width: 200px;
+    padding: 20px 5px;
+}
+
+header>.main-content {
+    padding-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    transform: translateY(-48px);
+    z-index: -1;
+}
+
+.background>span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(151, 151, 151, 0.205);
+    font-size: 10rem;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    line-height: 8rem;
+}
+
+.main-content>h1 {
+    text-transform: uppercase;
+    color: var(--main);
+    font-weight: bold;
+    font-size: 2.7rem;
+    padding-top: 25px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.main-content>img {
+    width: 400px;
+}
+
+/* Main container */
+main {
+    position: relative;
+    padding: 15px 10px;
+    z-index: 1;
+}
+
+main::after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: -25%;
+    bottom: 0%;
+    height: calc(100% + 40px);
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+main>section {
+    width: 75%;
+    font-size: 1.2rem;
+    border: 1px gray solid;
+}
+
+/* Main section 1 */
+
+.section-1>.rawbank-line {
+    transform: translateY(-25px);
+}
+
+.section-1>h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.section-1>ul {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.lady-first-illustration {
+    position: relative;
+    width: 100%;
+}
+
+.lady-first-illustration>img {
+    width: 300px;
+    z-index: 0;
+}
+
+.lady-first-illustration>.black-gold-title {
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+/* footer */
+
+footer.container {
+    padding: 50px 10px 10px 10px;
+}
+
+footer>img {
+    width: 150px;
+    margin: 20px 0px;
+}
+
+footer>div>a {
+    padding: 10px 15px;
+}
+
+footer>span {
+    color: rgba(195, 195, 195, 0.39);
+}
+
+/* Tablet breakpoint */
+@media screen and (max-width: 992px) {
+    header>img {
+        width: 150px;
+    }
+
+    .background>span {
+        font-size: 6.5rem;
+        line-height: 5.2rem;
+    }
+
+    .main-content>h1 {
+        font-size: 1.4rem;
+    }
+
+    .main-content>img {
+        width: 275px;
+    }
+
+    main::after {
+        width: 200%;
+        left: -50%;
+    }
+
+    main>section {
+        width: 85%;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 596px) {
+    header>img {
+        width: 120px;
+        padding-bottom: 5px;
+    }
+
+    .background {
+        transform: translateY(-40px);
+    }
+
+    .background>span {
+        font-size: 3.75rem;
+        line-height: 3.25rem;
+    }
+
+    header>.main-content {
+        padding-top: 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .main-content>h1 {
+        font-size: 1.3rem
+    }
+
+    .main-content>img {
+        width: 175px;
+    }
+
+    main::after {
+        width: 300%;
+        left: -100%;
+    }
+
+    main>section {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

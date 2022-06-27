@@ -1,0 +1,11 @@
+<svg id="XMLID_13_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.034" height="67.034" viewBox="0 0 67.034 67.034">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.008" x2="0.5" y2="0.998" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <path id="XMLID_17_" d="M47.064,0H19.97A19.992,19.992,0,0,0,0,19.97V47.064a19.992,19.992,0,0,0,19.97,19.97H47.064a19.992,19.992,0,0,0,19.97-19.97V19.97A19.993,19.993,0,0,0,47.064,0ZM60.29,47.064A13.226,13.226,0,0,1,47.064,60.29H19.97A13.226,13.226,0,0,1,6.744,47.064V19.97A13.226,13.226,0,0,1,19.97,6.744H47.064A13.226,13.226,0,0,1,60.29,19.97V47.064Z" fill="url(#linear-gradient)"/>
+  <path id="XMLID_81_" d="M150.337,133a17.337,17.337,0,1,0,17.337,17.337A17.357,17.357,0,0,0,150.337,133Zm0,27.931a10.594,10.594,0,1,1,10.594-10.594A10.594,10.594,0,0,1,150.337,160.931Z" transform="translate(-116.82 -116.82)" fill="url(#linear-gradient)"/>
+  <circle id="XMLID_83_" cx="4.154" cy="4.154" r="4.154" transform="translate(46.733 12.156)" fill="url(#linear-gradient)"/>
+</svg>
