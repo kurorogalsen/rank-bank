@@ -25,10 +25,10 @@
             <img class="d-flex " src="./Asset1/images/Rawbank_Ladies-min.png" alt="Rawbank ladies">
         </div>
     </header>
-    
+
     <main class="container flex-column">
 
-        <section class="flex-column section-1">
+        <section id="section-1" class="flex-column">
             <img class="rawbank-line" src="./Asset1/images/line_logo.svg" alt="line rawbank">
             <h2>Pour une clientèle au féminin</h2>
             <p>
@@ -58,71 +58,149 @@
             </p>
         </section>
 
-        <section class="flex-column section-2">
-            <div class="flex-column lady-first">
-                <div class="flex-column lady-first-illustration">
-                    <img src="./Asset1/images/Rawbank_HowToBeLady-min.png" alt="">
-                    <h1 class="flex-column black-gold-title">
-                        <span>COMMENT DEVENIR</span>
-                        <span>LADY'S FIRST</span>
-                    </h1>
-                </div>
-                <div class="li-row flex-row">
-                    <ul>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                    </ul>
-                </div>
+        <section id="section-2" class="flex-column">
+            <div class="flex-column lady-first-illustration">
+                <img src="./Asset1/images/Rawbank_HowToBeLady-min.png" alt="">
+                <h2 class="flex-column black-gold-title">
+                    <span>COMMENT DEVENIR</span>
+                    <span>LADY'S FIRST</span>
+                </h2>
+            </div>
+            <div class="li-row flex-column">
+                <ul class="flex-row">
+                    <li class="w-50">Etre une femme âgée : de 18 ans minimum ;</li>
+                    <li class="w-50">Ouvrir un compte courant pour votre structure chez Rawbank ;</li>
+                </ul>
+                <ul class="flex-row">
+                    <li class="w-50">
+                        Etre propriétaire d’un établissement ou être actionnaire
+                        dans une société : à au moins 51%, et assurer la gestion
+                        quotidienne de l’entreprise (gérante statutaire) ;
+                    </li>
+                    <li class="w-50">
+                        Présenter les documents légaux constitutifs de votre structure;
+                    </li>
+                </ul>
+            </div>
+            <div class="hexagone container flex-column">
+                <!--                 <img src="./Asset1/images/bg_hexagone-filter.webp" alt="Rawbank hexagone">
+ -->
             </div>
         </section>
 
-        <section class="flex-column section-3">
-
+        <section id="section-3" class="flex-column">
+            <h2 class="flex-column black-gold-title">
+                <span>ACCOMPAGNEMENT</span>
+                <span>RAWBANK</span>
+            </h2>
+            <p>
+                Grâce à ce programme, les Lady's First bénéficient de plusieurs avantages qui leur permettent d'occuper
+                une place de choix au sein de la banque: il s'agit notamment:
+            </p>
+            <ul>
+                <li>
+                    <b>De formations:</b> organisées pour répondre aux besoins de renforcement des capacités dans la
+                    gestion
+                    d'entreprise avec l'appui de Partenaires locaux et internationaux
+                </li>
+                <li>
+                    <b>De nombreuses ouvertures à des réseaux de fermes entrepreneures (Networking):</b>
+                    Le programme Lady's First aide les femmes à développer et entretenir des relations d'affaires
+                    mutuellement bénéfiques.
+                </li>
+                <li>
+                    <b>De plusieurs accompagnement techniques et financiers attractifs</b>
+                    une équipe de commerciaux dédiés, pour une prise en charge optimale des besoins spécifiques à la
+                    clientèle Lady's First.
+                </li>
+            </ul>
         </section>
 
-        <form class="flex-column section-3" action="">
+        <section id="section-4" class="flex-column">
             <h2>
                 CONTACTEZ-NOUS
             </h2>
-            <span>pour avoir plus d'information</span>
-            <div class="container flex-row input-container">
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="Nom">
-            </div>
-            <div class="container flex-row input-container">
-                <select class="container" name="" id="">
-                    <option value="">Ville/Région</option>
-                </select>
-            </div>
-            <div class="container flex-row input-container">
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="Nom">
-            </div>
-            <div class="container flex-row input-container">
-                <select class="container" name="" id="">
-                    <option value="">Ville/Région</option>
-                </select>
-            </div>
-            <button class="container">
-                ENVOYER
-            </button>
-        </form>
+            <span>pour avoir plus d'informations</span>
 
-        <footer>
+            <form class="flex-row" action="">
+                <div class="input-container w-50">
+                    <input class="rawbank-input container" type="text" placeholder="Prénom (s)">
+                </div>
 
-        </footer>
+                <div class="input-container w-50">
+                    <input class="rawbank-input container" type="text" placeholder="Nom">
+                </div>
+
+                <div class="input-container container">
+                    <select class="rawbank-input container" name="" id="">
+                        <option value="">Profession / secteur</option>
+                    </select>
+                </div>
+
+                <div class="input-container w-50">
+                    <input class="rawbank-input container" type="tel" placeholder="Téléphone">
+                </div>
+
+                <div class="input-container w-50">
+                    <input class="rawbank-input container" type="email" placeholder="E-mail">
+                </div>
+
+                <div class="input-container container">
+                    <select class="rawbank-input container" name="" id="">
+                        <option value="">Ville / Région</option>
+                    </select>
+                </div>
+
+                <button class="container">
+                    ENVOYER
+                </button>
+
+            </form>
+        </section>
     </main>
-    
+
     <footer class="container flex-column">
         <img src="./Asset1/images/Rawbank_logo.svg" alt="Rawbank logo">
         <div class="flex-row">
-            <a href="#"><img width="23" src="./Asset1/images/i-facebook.svg" alt=""></a>
-            <a href="#"><img width="23" src="./Asset1/images/i-twitter.svg" alt=""></a>
-            <a href="#"><img width="23" src="./Asset1/images/i-instagram.svg" alt=""></a>
+            <a href="#">
+                <svg class="svg-icon facebook" xmlns="http://www.w3.org/2000/svg" width="73.211" height="73.212"
+                    viewBox="0 0 73.211 73.212">
+                    <path id="facebook-svgrepo-com_1_" data-name="facebook-svgrepo-com (1)"
+                        d="M63.348,0H9.867A9.865,9.865,0,0,0,0,9.865V63.346a9.865,9.865,0,0,0,9.865,9.865H36.244l.045-26.162h-6.8a1.6,1.6,0,0,1-1.6-1.6l-.033-8.433a1.6,1.6,0,0,1,1.6-1.61h6.784V27.261c0-9.456,5.775-14.605,14.211-14.605h6.922a1.6,1.6,0,0,1,1.6,1.6V21.37a1.6,1.6,0,0,1-1.6,1.6l-4.248,0c-4.588,0-5.476,2.18-5.476,5.379v7.054h10.08A1.6,1.6,0,0,1,59.327,37.2l-1,8.433a1.6,1.6,0,0,1-1.593,1.415H47.7l-.045,26.162H63.348a9.865,9.865,0,0,0,9.865-9.865V9.865A9.866,9.866,0,0,0,63.348,0Z"
+                        transform="translate(-0.002)" fill="#fff" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="svg-icon twitter" xmlns="http://www.w3.org/2000/svg" width="75.18" height="61.552"
+                    viewBox="0 0 75.18 61.552">
+                    <g id="XMLID_826_" transform="translate(0.002 -28.097)">
+                        <path id="XMLID_827_"
+                            d="M73.474,35.2a28.5,28.5,0,0,1-3.636,1.325A16.073,16.073,0,0,0,73.11,30.77a1.213,1.213,0,0,0-1.774-1.412A28.615,28.615,0,0,1,62.878,32.7,16.146,16.146,0,0,0,35.443,44.236a16.464,16.464,0,0,0,.132,2.085A41.318,41.318,0,0,1,7.216,31.276a1.213,1.213,0,0,0-1.988.156A16.162,16.162,0,0,0,6.883,50.007a13.671,13.671,0,0,1-2.16-.964,1.213,1.213,0,0,0-1.8,1.032c0,.072,0,.143,0,.216a16.2,16.2,0,0,0,7.9,13.879c-.41-.041-.82-.1-1.228-.178a1.213,1.213,0,0,0-1.382,1.561A16.134,16.134,0,0,0,20.033,76.37,28.552,28.552,0,0,1,4.771,80.726a29.2,29.2,0,0,1-3.418-.2,1.213,1.213,0,0,0-.8,2.225,43.523,43.523,0,0,0,23.535,6.9c16.431,0,26.71-7.748,32.44-14.248A45.161,45.161,0,0,0,67.773,45.967c0-.443-.007-.89-.02-1.336a31.374,31.374,0,0,0,7.22-7.648,1.213,1.213,0,0,0-1.5-1.783Z"
+                            transform="translate(0)" fill="#fff" />
+                    </g>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="svg-icon instagram" id="XMLID_13_" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="67.034" height="67.034"
+                    viewBox="0 0 67.034 67.034">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.5" y1="0.008" x2="0.5" y2="0.998"
+                            gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#fff" />
+                            <stop offset="1" stop-color="#fff" />
+                        </linearGradient>
+                    </defs>
+                    <path id="XMLID_17_"
+                        d="M47.064,0H19.97A19.992,19.992,0,0,0,0,19.97V47.064a19.992,19.992,0,0,0,19.97,19.97H47.064a19.992,19.992,0,0,0,19.97-19.97V19.97A19.993,19.993,0,0,0,47.064,0ZM60.29,47.064A13.226,13.226,0,0,1,47.064,60.29H19.97A13.226,13.226,0,0,1,6.744,47.064V19.97A13.226,13.226,0,0,1,19.97,6.744H47.064A13.226,13.226,0,0,1,60.29,19.97V47.064Z"
+                        fill="url(#linear-gradient)" />
+                    <path id="XMLID_81_"
+                        d="M150.337,133a17.337,17.337,0,1,0,17.337,17.337A17.357,17.357,0,0,0,150.337,133Zm0,27.931a10.594,10.594,0,1,1,10.594-10.594A10.594,10.594,0,0,1,150.337,160.931Z"
+                        transform="translate(-116.82 -116.82)" fill="url(#linear-gradient)" />
+                    <circle id="XMLID_83_" cx="4.154" cy="4.154" r="4.154" transform="translate(46.733 12.156)"
+                        fill="url(#linear-gradient)" />
+                </svg>
+            </a>
         </div>
         <span>© 2022 copyright - design by Havas</span>
     </footer>
